@@ -1,0 +1,97 @@
+.sidebar {
+  width: 100%;
+  max-width: 275px;
+  background: #f7f9fc;
+  height: 100%;
+  min-height: 100vh;
+  padding: 2rem 0;
+  position: fixed;
+
+  figure {
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+    .logo {
+      width: 100%;
+      min-height: 2.5rem;
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 48px);
+    padding: 0 1.5rem 0 0.5rem;
+
+    .navLinks {
+      .navlink {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        justify-content: space-between;
+      }
+      .link {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: #344054;
+        font-size: 0.875rem;
+        padding: 0.625rem 1rem;
+      }
+      .procure {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.625rem 1rem;
+        background: #e3eafb;
+        border-radius: 0.25rem;
+
+        .link {
+          padding: 0;
+        }
+      }
+      .finance {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+          font-size: 0.75rem;
+          background: #175cff;
+          color: white;
+          padding: 0 0.5rem;
+          border-radius: 0.5rem;
+        }
+      }
+
+      .procure_dropdown {
+        color: #344054;
+        padding: 0.625rem 48px;
+        margin: 0.5rem 0;
+        border-radius: 0.25rem;
+      }
+      .procure_dropdown:first-child {
+        background: #e3eafb;
+      }
+    }
+
+    .profile_logout {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      justify-content: space-between;
+      padding: 1rem 0;
+
+      .profile {
+        display: flex;
+        gap: 0.75rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+}

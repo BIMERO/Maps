@@ -59,12 +59,11 @@
       display: flex;
       gap: 1rem;
       align-items: baseline;
-      flex-wrap: wrap;
       justify-content: space-between;
 
       ul {
         width: 100%;
-        max-width: 700px;
+        max-width: 580px;
         line-height: 2.75rem;
 
         li {
@@ -83,7 +82,7 @@
           span {
             color: #344054;
             width: 100%;
-            max-width: 400px;
+            max-width: 330px;
             font-weight: 600;
           }
 
@@ -198,6 +197,16 @@
         display: flex;
         align-items: center;
         gap: 0.75rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+    .quote_details {
+      .quote_container {
+        flex-direction: column;
       }
     }
   }
